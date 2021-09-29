@@ -1,0 +1,39 @@
+body{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.img > li{
+    display: inline;
+}
+
+.img > li >img{
+    width: 300px;
+}
+
+.nav{
+    list-style-type: none;
+}
+
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.covid-image{
+    width: 500px;
+}
+
+.nav > li >a{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+
+.our-nav > li{
+    display: inline;
+    font-size: 30px;
+    padding: 5px;
+}

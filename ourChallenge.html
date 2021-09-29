@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Our Challenge</h1>
+
+    <table>
+        <tr>
+            <td>
+                <img src="covid-cells.jpg" alt="" class="covid-image">
+            </td>
+            <td>
+                <ul class="our-nav">
+                    <li><a href="">ISU</a></li>
+                    <li><a href="">Permasalahan</a></li>
+                    <li><a href="">Usaha dan Hambatan</a></li>
+                    <li><a href="">Tujuan</a></li>
+                </ul>
+                <section>
+                    <p id="textContent" style="text-align: justify; padding: 20px;">Pandemi telah menyebabkan hilangnya
+                        pekerjaan, kerawanan pangan, dampak negatif pada kualitas
+                        pendidikan dan kesejahteraan mental, ditambah dengan berbagai masalah domestik, terutama bagi
+                        keluarga berpenghasilan rendah. PPKM yang konstan dan pembatasan mobilitas telah meningkatkan
+                        situasi ini, mengakibatkan lebih banyak individu dan keluarga yang sangat membutuhkan bantuan.
+                        Namun, tidak ada platform/alat efektif yang tersedia bagi mereka untuk melaporkan dan meminta
+                        bantuan.</p>
+                </section>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        const nav = document.getElementsByTagName("li")
+        console.log(nav)
+
+        for (let i = 0; i < nav.length; i++) {
+            nav[i].addEventListener("click", event => {
+                event.preventDefault()
+                const text = document.getElementById("textContent")
+
+                if (i === 0) {
+                    text.innerHTML = `Pandemi telah menyebabkan hilangnya pekerjaan, kerawanan pangan, dampak negatif pada kualitas
+                        pendidikan dan kesejahteraan mental, ditambah dengan berbagai masalah domestik, terutama bagi
+                        keluarga berpenghasilan rendah. PPKM yang konstan dan pembatasan mobilitas telah meningkatkan
+                        situasi ini, mengakibatkan lebih banyak individu dan keluarga yang sangat membutuhkan bantuan.
+                        Namun, tidak ada platform/alat efektif yang tersedia bagi mereka untuk melaporkan dan meminta
+                        bantuan.`
+                } else if (i === 1) {
+                    console.log("berhasil")
+                    text.innerHTML = `Ribuan individu dan keluarga berpenghasilan rendah di Indonesia (atau Asia Tenggara) di 
+                    bawah dampak COVID-19 mencari bantuan setiap hari, baik secara ekonomi maupun emosional. Tetapi jalan untuk mengeluarkan 
+                    suara terbatas. Dalam banyak kasus, hal ini tidak diperhatikan karena lokasi geografis, tidak dapat diaksesnya teknologi,
+                     alokasi sumber daya, atau tekanan dari keluarga. Berikut beberapa referensi yang bisa kamu lihat :`
+                } else if (i == 2) {
+                    text.innerHTML = `Nomor saluran bantuan COVID-19 di berbagai negara adalah hal yang sangat berguna dengan hotline
+                        khusus untuk dihubungi, tetapi seringkali sibuk saat dihubungi. Saluran ini membutuhkan tim
+                        khusus untuk memantau terus menerus dan tidak dapat menyebarkan pesan SOS yang tersebar luas ke
+                        lingkungan yang lebih besar dan komunitas terdekat untuk memperoleh bantuan dari masyarakat yang
+                        saling berbagi dan kepedulian.
+                        Gerakan Bendera Putih di Malaysia: Gerakan ini meningkatkan kesadaran tetapi belum dapat
+                        ditingkatkan untuk skala yang lebih besar dan membutuhkan pemantauan fisik.
+                        Kamu diperbolehkan melakukan eksplorasi dan membuat asumsi sendiri di luar dari detail challenge
+                        yang diberikan. Sebagai contoh, jika challenge tidak menerangkan lebih detail mengenai target
+                        pengguna, maka kamu bisa asumsikan sendiri profil pengguna yang berpotensi menggunakan produk
+                        dari partner. Tidak hanya itu, kamu juga bisa bereksplorasi untuk menghasilkan flow produk
+                        digital yang lebih baik jika dibutuhkan.`
+                }else if (i == 3){
+                    text.innerHTML = `Nomor saluran bantuan COVID-19 di berbagai negara adalah hal yang sangat berguna dengan hotline
+                        khusus untuk dihubungi, tetapi seringkali sibuk saat dihubungi. Saluran ini membutuhkan tim
+                        khusus untuk memantau terus menerus dan tidak dapat menyebarkan pesan SOS yang tersebar luas ke
+                        lingkungan yang lebih besar dan komunitas terdekat untuk memperoleh bantuan dari masyarakat yang
+                        saling berbagi dan kepedulian.
+                        Gerakan Bendera Putih di Malaysia: Gerakan ini meningkatkan kesadaran tetapi belum dapat
+                        ditingkatkan untuk skala yang lebih besar dan membutuhkan pemantauan fisik.
+                        Kamu diperbolehkan melakukan eksplorasi dan membuat asumsi sendiri di luar dari detail challenge
+                        yang diberikan. Sebagai contoh, jika challenge tidak menerangkan lebih detail mengenai target
+                        pengguna, maka kamu bisa asumsikan sendiri profil pengguna yang berpotensi menggunakan produk
+                        dari partner. Tidak hanya itu, kamu juga bisa bereksplorasi untuk menghasilkan flow produk
+                        digital yang lebih baik jika dibutuhkan.`
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
